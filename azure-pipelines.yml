@@ -18,3 +18,14 @@ variables:
   location: 'EAST US'
 
 
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16'
+  displayName: 'Install Node.js'
+- task: AzureLoadTest@1
+  inputs:
+    azureSubscription: 'cnt'
+    loadTestConfigFile: 'SampleApp.yaml'
+    resourceGroup: 'radhika-test'
+    loadTestResource: 'rbac-test'
