@@ -23,9 +23,9 @@ steps:
   inputs:
     versionSpec: '16'
   displayName: 'Install Node.js'
-- task: AzureLoadTest@1
+- task: b61b360c-31ac-4389-922b-303ea8befde7@1
   inputs:
-    azureSubscription: 'cnt'
+    azureSubscription: 'cloud-native-testing'
     loadTestConfigFile: 'SampleApp.yaml'
     resourceGroup: 'radhika-test'
     loadTestResource: 'rbac-test'
