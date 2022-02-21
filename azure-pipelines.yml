@@ -28,4 +28,4 @@ steps:
     azureSubscription: 'cloud-native-testing'
     loadTestConfigFile: 'SampleApp.yaml'
     resourceGroup: 'radhika-test'
-    loadTestResource: 'rbac-test'
+    loadTestResource: 'rbac-test1'
