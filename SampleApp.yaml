@@ -1,5 +1,6 @@
-version: v0.1
-testName: SampleAppTest
-testPlan: dfos-QA.jmx
-description: 'SampleApp Test Run'
+testName: sampletest
+testPlan: SampleApp_Secrets.jmx
+description: ''
 engineInstances: 1
+splitAllCSVs: False
+failureCriteria: []
