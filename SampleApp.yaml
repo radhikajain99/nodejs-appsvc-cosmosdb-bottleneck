@@ -3,4 +3,5 @@ testPlan: SampleApp_Secrets.jmx
 description: ''
 engineInstances: 1
 splitAllCSVs: False
-failureCriteria: []
+failureCriteria:
+- max(latency) >  30000
