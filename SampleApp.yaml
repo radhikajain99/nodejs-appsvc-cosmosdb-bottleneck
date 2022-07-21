@@ -1,5 +1,5 @@
 testName: sampletest
-testPlan: SampleApp_Secrets.jmx
+testPlan: SampleApp.jmx
 description: ''
 engineInstances: 1
 splitAllCSVs: False
