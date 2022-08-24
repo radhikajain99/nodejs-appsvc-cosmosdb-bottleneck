@@ -4,4 +4,4 @@ description: ''
 engineInstances: 1
 splitAllCSVs: False
 properties:
-  userPropertyFile: .\user1.properties
+  userPropertyFile: user1.properties
