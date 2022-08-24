@@ -3,5 +3,5 @@ testPlan: SampleApp.jmx
 description: ''
 engineInstances: 1
 splitAllCSVs: False
-failureCriteria:
-- max(latency) > 30000
+properties:
+  userPropertyFile: .\user1.properties
