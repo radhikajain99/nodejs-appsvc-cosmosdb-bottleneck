@@ -3,5 +3,5 @@ testPlan: SampleApp.jmx
 description: ''
 engineInstances: 1
 splitAllCSVs: False
-properties:
-  userPropertyFile: user1.properties
+configurationFiles:
+- testcsvfile.csv
