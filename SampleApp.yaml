@@ -1,7 +1,0 @@
-testName: sampletest
-testPlan: SampleApp.jmx
-description: ''
-engineInstances: 1
-splitAllCSVs: False
-configurationFiles:
-- testcsvfile.csv
