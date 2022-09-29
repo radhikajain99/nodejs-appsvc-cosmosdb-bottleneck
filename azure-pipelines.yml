@@ -27,5 +27,5 @@ steps:
   inputs:
     azureSubscription: 'cnt'
     loadTestConfigFile: 'test/SampleApp.yaml'
-    resourceGroup: 'radhika-test'
-    loadTestResource: 'rbac-test'
+    resourceGroup: 'newtestrg'
+    loadTestResource: 'canary-001'
