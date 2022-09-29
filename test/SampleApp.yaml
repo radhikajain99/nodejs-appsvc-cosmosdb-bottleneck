@@ -1,5 +1,5 @@
 testName: sampletest
-testPlan: SampleApp.jmx
+testPlan: NGINX-10s.jmx
 description: ''
 engineInstances: 1
 splitAllCSVs: False
