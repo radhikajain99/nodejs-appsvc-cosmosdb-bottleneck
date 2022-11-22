@@ -3,9 +3,5 @@ testPlan: NGINX-10s.jmx
 description: ''
 engineInstances: 1
 splitAllCSVs: False
-keyVaultReferenceIdentity: /subscriptions/7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a/resourcegroups/cnt-dev-data20210617-wus2-rg/providers/microsoft.managedidentity/userassignedidentities/cnt-dev-data20210617-wus2-msi
 configurationFiles:
 - testcsvfile.csv
-certificates:
-- name: test
-  value: https://cntdevdata20210617wus2kv.vault.azure.net/certificates/GenevaClientCert/54d046ede3d843648c225f29d2c1df16
