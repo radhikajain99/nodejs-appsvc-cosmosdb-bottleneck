@@ -1,4 +1,5 @@
-testName: sampletest
+testId: sampletestid
+displayName: sample-display-name
 testPlan: SampleApp.jmx
 description: ''
 engineInstances: 1
