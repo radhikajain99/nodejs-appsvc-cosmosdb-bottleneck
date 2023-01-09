@@ -1,0 +1,12 @@
+testName: ADLS-LakeOperationsProxy-CST031
+testPlan: LakeOperations_latest_19_oct_shortcuts.jmx
+description: ADLSLakeOperationsProxy
+engineInstances: 1
+splitAllCSVs: False
+configurationFiles:
+- 1MB.bin
+failureCriteria: 
+   - Read: p50(response_time_ms) > 65
+   - Update.Append: p50(response_time_ms) > 135
+   - percentage(error) > 1
+env:
