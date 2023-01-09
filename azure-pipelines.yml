@@ -28,7 +28,7 @@ steps:
     azureSubscription: 'cnt-test'
     loadTestConfigFile: 'test/customerIssue.yaml'
     resourceGroup: 'radhika-test'
-    loadTestResource: '- task: AzureLoadTest@1
+    loadTestResource: 'rbac-test'
     env: |
       [
       {
@@ -41,7 +41,7 @@ steps:
       },
       {
         "name":"Secret",
-        "value":"$(OneLakeAdminIntegrationTestsAppSecret)"
+       "value":"$(OneLakeAdminIntegrationTestsAppSecret)"
       },
       {
         "name":"Host",
@@ -80,7 +80,7 @@ steps:
         "value":"$(onelakeppetenantadmin)"
       },
       {
-        "name":"ServicePrincipalOneLakeIntegartionTests",
+       "name":"ServicePrincipalOneLakeIntegartionTests",
         "value":"$(ClientObjectId)"
       },
       {
