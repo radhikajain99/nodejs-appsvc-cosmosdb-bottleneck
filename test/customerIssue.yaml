@@ -5,6 +5,7 @@ engineInstances: 1
 splitAllCSVs: False
 configurationFiles:
 - 1MB.bin
+- 2MB.bin
 failureCriteria: 
    - Read: p50(response_time_ms) > 65
    - Update.Append: p50(response_time_ms) > 135
