@@ -1,5 +1,5 @@
-testId: sampletestid2
-displayName: ado-test-private-ext
+testId: sampletestid3
+displayName: ado-test-private-ext-new-ver
 testPlan: SampleApp.jmx
 description: ''
 engineInstances: 1
