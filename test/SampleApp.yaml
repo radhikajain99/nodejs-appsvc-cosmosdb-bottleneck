@@ -4,3 +4,6 @@ testPlan: SampleApp.jmx
 description: ''
 engineInstances: 1
 splitAllCSVs: False
+configurationFiles:
+- testcsvfile.csv
+- file_download_issue_1.png
