@@ -7,5 +7,5 @@ splitAllCSVs: False
 configurationFiles:
 - testcsvfile.csv
 - file_download_issue_1.png
-- inputartifacts.zip
+- input artifacts.zip
 - sample-jar.jar
