@@ -1,0 +1,31 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  webAppName: 'test'
+  serviceConnection: 'cnt'
+  azureSubscriptionId: '7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a'
+  loadTestResource: 'radhikatest-az'
+  loadTestResourceGroup: 'radhika-test'
+  location: 'EAST US'
+
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16'
+  displayName: 'Install Node.js'
+- task: b61b360c-31ac-4389-922b-303ea8befde7@1
+  inputs:
+    azureSubscription: 'cnt-test'
+    loadTestConfigFile: 'test/SampleApp.yaml'
+    resourceGroup: 'radhika-test'
+    loadTestResource: 'rbac-test'
