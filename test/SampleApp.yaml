@@ -1,6 +1,6 @@
 testId: sampletestid4
 displayName: ado-test-public-ext-upload-fix
-testPlan: SampleApp.jmx
+testPlan: SampleApp_Secrets.jmx
 description: ''
 engineInstances: 1
 splitAllCSVs: False
