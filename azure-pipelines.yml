@@ -26,6 +26,6 @@ steps:
 - task: b61b360c-31ac-4389-922b-303ea8befde7@1
   inputs:
     azureSubscription: 'Cloud-Native-Testing-IDC-Test(7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a)'
-    loadTestConfigFile: 'test/SampleApp.yaml'
+    loadTestConfigFile: 'test/config.yml'
     resourceGroup: 'radhika-test'
     loadTestResource: 'ado-ext-test'
