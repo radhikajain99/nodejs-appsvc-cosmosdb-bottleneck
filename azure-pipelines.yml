@@ -28,4 +28,4 @@ steps:
     resourceGroup: 'radhika-test'
     loadTestResource: 'ado-ext-test'
 - publish: $(System.DefaultWorkingDirectory)/loadTest
-    artifact: results
+  artifact: results
