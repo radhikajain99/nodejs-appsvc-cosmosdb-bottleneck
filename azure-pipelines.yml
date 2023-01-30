@@ -27,3 +27,5 @@ steps:
     loadTestConfigFile: 'test/config.yml'
     resourceGroup: 'radhika-test'
     loadTestResource: 'ado-ext-test'
+- publish: $(System.DefaultWorkingDirectory)/loadTest
+    artifact: results
