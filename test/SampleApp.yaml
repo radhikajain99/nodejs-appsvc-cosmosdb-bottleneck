@@ -6,8 +6,8 @@ engineInstances: 1
 splitAllCSVs: False
 failureCriteria:
 - Test: avg(response_time_ms) > 100
-- max(response_time_ms) < 2
-- avg(latency) > 100
+- min(latency) > 100
+- Test: percentage(error) > 10
 configurationFiles:
 - testcsvfile.csv
 - file_download_issue_1.png
