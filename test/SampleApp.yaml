@@ -5,9 +5,9 @@ description: ''
 engineInstances: 1
 splitAllCSVs: False
 failureCriteria:
-  - percentage(error) > 1 
-  - min(response_time_ms) > 100
-  - avg(latency) > 1000
+- 'Test: avg(response_time_ms) > 100'
+- max(response_time_ms) < 2
+- avg(latency) > 100
 configurationFiles:
 - testcsvfile.csv
 - file_download_issue_1.png
