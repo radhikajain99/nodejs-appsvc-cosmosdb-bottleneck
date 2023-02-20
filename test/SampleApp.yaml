@@ -13,6 +13,3 @@ configurationFiles:
 - file_download_issue_1.png
 - input artifacts.zip
 - sample-jar.jar
-secrets:
-  - name: my-secret
-    value: https://akv-contoso.vault.azure.net/secrets/MySecret/abc1234567890def12345
