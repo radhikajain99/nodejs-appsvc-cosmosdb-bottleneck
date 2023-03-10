@@ -13,3 +13,6 @@ configurationFiles:
 - file_download_issue_1.png
 - input artifacts.zip
 - sample-jar.jar
+secrets:
+  - name: test
+    value: https://jenkins-test-kv.vault.azure.net/secrets/jenkinsSecretUri/7aa3bdc95678481cb5465a4548afce5f
