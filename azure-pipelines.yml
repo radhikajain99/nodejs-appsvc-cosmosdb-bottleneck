@@ -27,12 +27,7 @@ steps:
     loadTestConfigFile: 'test/SampleApp.yaml'
     resourceGroup: 'radhika-test'
     loadTestResource: 'ado-ext-test'
-    secrets: |
-      [
-          {
-          "name": "test",
-          "value": "$(test)"
-          }
-      ]
+    loadTestRunName: 'sample test run'
+    loadTestRunDescription: 'sample run desc'
 - publish: $(System.DefaultWorkingDirectory)/loadTest
   artifact: results
