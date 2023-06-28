@@ -88,7 +88,7 @@ jobs:
 #           parameters: ./ARMTemplate/parameters.json name=${{ env.LOAD_TEST_RESOURCE }} location="${{ env.LOCATION }}"
           
       - name: 'Azure Load Testing'
-        uses: azure/load-testing@v1.1.16
+        uses: azure/load-testing@v1
         with:
           loadTestConfigFile: 'test/config.yml'
           loadTestResource: ${{ env.LOAD_TEST_RESOURCE }}
