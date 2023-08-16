@@ -14,5 +14,5 @@ configurationFiles:
 - input artifacts.zip
 - sample-jar.jar
 autoStop:
-  errorPercentage: 90
-  timeWindow: 60
+  errorPercentage: 100
+  timeWindow: 50
