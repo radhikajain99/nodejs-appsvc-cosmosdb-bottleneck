@@ -1,6 +1,7 @@
-testId: mohit-1234-1234
-displayName: sampletest5
-testPlan: SampleApp.jmx
+testId: mohit-1234-1234567
+displayName: sampletest-url-test
+testPlan: ./../urltest.json
+testType : URL
 description: ''
 engineInstances: 1
 splitAllCSVs: False
