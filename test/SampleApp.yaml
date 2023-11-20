@@ -11,9 +11,6 @@ failureCriteria:
 - Test: percentage(error) > 10
 configurationFiles:
 - testcsvfile.csv
-- file_download_issue_1.png
-zipArtifacts : 
-- ./../csv-files.zip
 autoStop:
   errorPercentage: 100
   timeWindow: 50
