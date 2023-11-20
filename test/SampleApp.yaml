@@ -1,4 +1,4 @@
-testId: tnwjdsfbvtnsjznvrenj-bchbhvr-vbasdbiibibi
+testId: mohit-1234-1234
 displayName: sampletest5
 testPlan: SampleApp.jmx
 description: ''
@@ -11,6 +11,8 @@ failureCriteria:
 configurationFiles:
 - testcsvfile.csv
 - file_download_issue_1.png
+zipArtifacts : 
+- ./../csv-files.zip
 autoStop:
   errorPercentage: 100
   timeWindow: 50
