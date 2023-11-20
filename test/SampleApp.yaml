@@ -11,8 +11,6 @@ failureCriteria:
 configurationFiles:
 - testcsvfile.csv
 - file_download_issue_1.png
-- input artifacts.zip
-- sample-jar.jar
 autoStop:
   errorPercentage: 100
   timeWindow: 50
