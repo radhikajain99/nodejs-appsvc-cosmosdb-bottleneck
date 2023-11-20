@@ -12,7 +12,7 @@ failureCriteria:
 configurationFiles:
 - testcsvfile.csv
 zipArtifacts : 
-- ./../csv-files.zip
+- input artifacts.zip
 autoStop:
   errorPercentage: 100
   timeWindow: 50
