@@ -1,7 +1,7 @@
 testId: mohit-1234-1234567
 displayName: sampletest-url-test
-testPlan: ./../urltest.json
-testType : URL
+testPlan: SampleApp.jmx
+testType : JMX
 description: ''
 engineInstances: 1
 splitAllCSVs: False
