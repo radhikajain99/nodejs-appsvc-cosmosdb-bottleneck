@@ -10,7 +10,7 @@ failureCriteria:
 - min(latency) > 100
 - Test: percentage(error) > 10
 configurationFiles:
-- mohit
+- ./../mohit
 autoStop:
   errorPercentage: 100
   timeWindow: 50
