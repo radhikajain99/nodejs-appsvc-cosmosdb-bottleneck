@@ -9,8 +9,6 @@ failureCriteria:
 - Test: avg(response_time_ms) > 100
 - min(latency) > 100
 - Test: percentage(error) > 10
-configurationFiles:
-- ./../mohit
 autoStop:
   errorPercentage: 100
   timeWindow: 50
