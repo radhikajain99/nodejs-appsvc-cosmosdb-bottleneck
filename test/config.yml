@@ -1,14 +1,12 @@
 testName: mohit-gh-testing-url
 testPlan: ./../urltest.json
+testType : URL
 description: ''
 engineInstances: 1
-subnetId: /subscriptions/7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a/resourceGroups/podcastrg/providers/Microsoft.Network/virtualNetworks/nikita-podcast-vnet/subnets/default
 splitAllCSVs: True
 configurationFiles:
 - Shows.csv
 failureCriteria: []
-properties:
-  userPropertyFile: load.properties
 env:
   - name: webapp
     value: nikita-podcastwebapp.azurewebsites.net
