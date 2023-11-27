@@ -6,6 +6,9 @@ subnetId: /subscriptions/7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a/resourceGroups/pod
 splitAllCSVs: True
 configurationFiles:
 - Shows.csv
+failureCriteria: []
+properties:
+  userPropertyFile: load.properties
 env:
   - name: webapp
     value: nikita-podcastwebapp.azurewebsites.net
