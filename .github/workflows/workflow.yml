@@ -91,7 +91,7 @@ jobs:
             npm install
 
       - name: 'Azure Load Testing'
-        uses: azure/load-testing@qtv2-for-releases
+        uses: azure/load-testing@testing
         with:
           loadTestConfigFile: 'test/config.yml'
           loadTestResource: ${{ env.LOAD_TEST_RESOURCE }}
