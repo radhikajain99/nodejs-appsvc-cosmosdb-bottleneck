@@ -7,6 +7,11 @@ splitAllCSVs: True
 configurationFiles:
 - Shows.csv
 failureCriteria: []
+properties:
+  userPropertyFile: load.properties
+certificates:
+  - name: podcastcert
+    value: https://demo-podcast-akv.vault.azure.net/certificates/podcastcert
 env:
   - name: webapp
     value: nikita-podcastwebapp.azurewebsites.net
