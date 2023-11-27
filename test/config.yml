@@ -4,10 +4,6 @@ testType : JMX
 description: ''
 engineInstances: 1
 splitAllCSVs: True
-configurationFiles:
-- Shows.csv
-zipArtifacts : 
-- ./../csv-files.zip
 failureCriteria: []
 properties:
   userPropertyFile: load.properties
