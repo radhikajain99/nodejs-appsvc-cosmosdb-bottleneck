@@ -1,17 +1,11 @@
-testName: demo-podcast-vnet
-testPlan: NikitaPodcastTest.jmx
+testName: mohit-gh-testing-url
+testPlan: ./../urltest.json
 description: ''
-engineInstances: 5
+engineInstances: 1
 subnetId: /subscriptions/7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a/resourceGroups/podcastrg/providers/Microsoft.Network/virtualNetworks/nikita-podcast-vnet/subnets/default
 splitAllCSVs: True
 configurationFiles:
 - Shows.csv
-failureCriteria: []
-properties:
-  userPropertyFile: load.properties
-certificates:
-  - name: podcastcert
-    value: https://demo-podcast-akv.vault.azure.net/certificates/podcastcert
 env:
   - name: webapp
     value: nikita-podcastwebapp.azurewebsites.net
