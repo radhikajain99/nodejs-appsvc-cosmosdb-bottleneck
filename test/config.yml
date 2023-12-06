@@ -1,12 +1,10 @@
-testName: mohit-gh-testing-url
-testPlan: SampleApp.jmx
-testType : JMX
+testName: new-test
+testPlan: ./../urltest.json
+testType : URL
 description: ''
 engineInstances: 1
 splitAllCSVs: True
 failureCriteria: []
-properties:
-  userPropertyFile: load.properties
 certificates:
   - name: podcastcert
     value: https://demo-podcast-akv.vault.azure.net/certificates/podcastcert
