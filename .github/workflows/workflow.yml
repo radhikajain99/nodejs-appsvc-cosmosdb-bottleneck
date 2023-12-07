@@ -89,6 +89,14 @@ jobs:
       - name : 'Install dependencies'
         run: |
             npm install
+            
+      - name: Install Node.js and npm
+        uses: actions/setup-node@v4
+        with:
+          node-version: '14'
+  
+      - name: Install dependencies
+        run: npm install
 
       - name: 'Azure Load Testing'
         uses: Himanshu49/load-testing@6c6d45d6421dda07d5c31c9bdb1ed94d18526e91
