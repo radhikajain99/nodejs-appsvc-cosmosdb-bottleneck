@@ -9,5 +9,5 @@ certificates:
   - name: podcastcert
     value: https://demo-podcast-akv.vault.azure.net/certificates/podcastcert
 env:
-  - name: webapp
+  - name: 
     value: nikita-podcastwebapp.azurewebsites.net
