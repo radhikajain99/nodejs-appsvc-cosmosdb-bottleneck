@@ -26,7 +26,7 @@ steps:
     azureSubscription: 'MALT-FAIRFAX-TEST'
     loadTestConfigFile: 'test/SampleApp.yaml'
     resourceGroup: 'cnt-integration-tests-rg'
-    loadTestResource: 'cnt-integration-tests-alt-usgovvirginia-1'
+    loadTestResource: 'cnt-integration-tests-alt-usgovvirginia'
     loadTestRunName: 'sample test run'
     loadTestRunDescription: 'sample run desc'
 - publish: $(System.DefaultWorkingDirectory)/loadTest
