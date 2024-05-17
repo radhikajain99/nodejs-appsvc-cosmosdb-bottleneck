@@ -8,7 +8,7 @@ regionalLoadTestConfig:
 - region: eastus
   engineInstances: 1
 - region: swedencentral
-  engineInstances: 3
+  engineInstances: 1
 splitAllCSVs: False
 failureCriteria:
 - Test: avg(response_time_ms) > 100
