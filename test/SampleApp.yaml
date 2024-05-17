@@ -3,7 +3,12 @@ displayName: sampletest-url-test
 testPlan: SampleApp.jmx
 testType : JMX
 description: ''
-engineInstances: 1
+engineInstances: 4
+regionalLoadTestConfig:
+- region: eastus
+  engineInstances: 1
+- region: westeurope
+  engineInstances: 3
 splitAllCSVs: False
 failureCriteria:
 - Test: avg(response_time_ms) > 100
