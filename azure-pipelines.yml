@@ -23,10 +23,10 @@ steps:
   displayName: 'Install Node.js'
 - task: b61b360c-31ac-4389-922b-303ea8befde7@1
   inputs:
-    azureSubscription: 'cnt-fairfax-workload-identity'
+    azureSubscription: 'vens-rm'
     loadTestConfigFile: 'test/SampleApp.yaml'
-    resourceGroup: 'cnt-integration-tests-rg'
-    loadTestResource: 'cnt-integration-tests-alt-usgovvirginia'
+    resourceGroup: 'venkat-rg'
+    loadTestResource: 'vens-cse-lro1'
     loadTestRunName: 'sample test run'
     loadTestRunDescription: 'sample run desc'
 - publish: $(System.DefaultWorkingDirectory)/loadTest
