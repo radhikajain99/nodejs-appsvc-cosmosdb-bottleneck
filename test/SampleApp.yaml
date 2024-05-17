@@ -7,7 +7,7 @@ engineInstances: 4
 regionalLoadTestConfig:
 - region: eastus
   engineInstances: 1
-- region: westeurope
+- region: swedencentral
   engineInstances: 3
 splitAllCSVs: False
 failureCriteria:
