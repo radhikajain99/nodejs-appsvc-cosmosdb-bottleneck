@@ -6,7 +6,7 @@ description: ''
 engineInstances: 4
 splitAllCSVs: False
 regionalLoadTestConfig:
-- region: centralus
+- region: eastus
   engineInstances: 1
 - region: northeurope
   engineInstances: 2
