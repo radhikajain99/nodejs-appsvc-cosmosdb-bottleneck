@@ -2,6 +2,16 @@
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+trigger:
+  - main
+
+schedules:
+- cron: "*/10 * * * *"
+  displayName: 'testing ado pipeline'
+  branches:
+    include:
+      - main
+  always: true
 
 
 pool:
@@ -26,7 +36,7 @@ steps:
     azureSubscription: 'vens-rm'
     loadTestConfigFile: 'test/SampleApp.yaml'
     resourceGroup: 'venkat-rg'
-    loadTestResource: 'vens-cse-lro1'
+    loadTestResource: 'ado-test-mohit'
     loadTestRunName: 'sample test run'
     loadTestRunDescription: 'sample run desc'
 - publish: $(System.DefaultWorkingDirectory)/loadTest
