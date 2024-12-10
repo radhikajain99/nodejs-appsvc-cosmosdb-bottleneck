@@ -35,7 +35,7 @@ steps:
   inputs:
     azureSubscription: 'vens-rm'
     loadTestConfigFile: 'test/SampleApp.yaml'
-    resourceGroup: 'venkat-rg'
+    resourceGroup: 'radhika-test'
     loadTestResource: 'ado-test-mohit'
     loadTestRunName: 'sample test run'
     loadTestRunDescription: 'sample run desc'
