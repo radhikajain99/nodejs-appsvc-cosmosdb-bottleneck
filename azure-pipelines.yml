@@ -23,13 +23,22 @@ steps:
   inputs:
     versionSpec: '16'
   displayName: 'Install Node.js'
-- task: b61b360c-31ac-4389-922b-303ea8befde7@1
+# - task: b61b360c-31ac-4389-922b-303ea8befde7@1
+#   inputs:
+#     azureSubscription: 'mohit-ado-test-arm'
+#     loadTestConfigFile: 'test/SampleApp.yaml'
+#     resourceGroup: 'radhika-test'
+#     loadTestResource: 'ado-test-mohit'
+#     loadTestRunName: 'sample test run'
+#     loadTestRunDescription: 'sample run desc'
+# - publish: $(System.DefaultWorkingDirectory)/loadTest
+#   artifact: results
+  
+- task: AzureCLI@2
   inputs:
     azureSubscription: 'mohit-ado-test-arm'
-    loadTestConfigFile: 'test/SampleApp.yaml'
-    resourceGroup: 'radhika-test'
-    loadTestResource: 'ado-test-mohit'
-    loadTestRunName: 'sample test run'
-    loadTestRunDescription: 'sample run desc'
-- publish: $(System.DefaultWorkingDirectory)/loadTest
-  artifact: results
+    scriptType: 'ps'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'Write-host "Sample script"'
+    addSpnToEnvironment: true
+    keepAzSessionActive: true
