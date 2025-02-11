@@ -33,12 +33,16 @@ steps:
 #     loadTestRunDescription: 'sample run desc'
 # - publish: $(System.DefaultWorkingDirectory)/loadTest
 #   artifact: results
-  
+
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'mohit-ado-test-arm'
-    scriptType: 'ps'
+    azureSubscription: 'cicd-test'
+    scriptType: 'pscore'
     scriptLocation: 'inlineScript'
-    inlineScript: 'Write-host "Sample script"'
+    inlineScript: |
+      Write-host "Sample script"
+      Write-host "Sample script"
+      Write-host "Sample script"
+      Write-host "INPUT_CONNECTEDSERVICENAMEARM env var in Run-E2E-Tests: $env:INPUT_CONNECTEDSERVICENAMEARM"
     addSpnToEnvironment: true
-    keepAzSessionActive: true
+    failOnStandardError: true
