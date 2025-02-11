@@ -45,4 +45,3 @@ steps:
       Write-host "INPUT_CONNECTEDSERVICENAMEARM env var in Run-E2E-Tests: $env:INPUT_CONNECTEDSERVICENAMEARM"
     FailOnStandardError: true
     azurePowerShellVersion: 'LatestVersion'
-    pwsh: true
