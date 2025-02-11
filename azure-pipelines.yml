@@ -33,16 +33,16 @@ steps:
 #     loadTestRunDescription: 'sample run desc'
 # - publish: $(System.DefaultWorkingDirectory)/loadTest
 #   artifact: results
-
-- task: AzureCLI@2
+    
+- task: AzurePowerShell@5
   inputs:
     azureSubscription: 'mohit-ado-test-arm'
-    scriptType: 'pscore'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
+    ScriptType: 'InlineScript'
+    Inline: |
       Write-host "Sample script"
       Write-host "Sample script"
       Write-host "Sample script"
       Write-host "INPUT_CONNECTEDSERVICENAMEARM env var in Run-E2E-Tests: $env:INPUT_CONNECTEDSERVICENAMEARM"
-    addSpnToEnvironment: true
-    failOnStandardError: true
+    FailOnStandardError: true
+    azurePowerShellVersion: 'LatestVersion'
+    pwsh: true
