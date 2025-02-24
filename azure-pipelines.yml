@@ -26,8 +26,8 @@ steps:
   inputs:
     azureSubscription: 'mohit-ado-test-arm'
     loadTestConfigFile: 'test/SampleApp.yaml'
-    resourceGroup: 'cnt-ado-task-tests-rg'
-    loadTestResource: 'cnt-ado-task-tests-alt'
+    resourceGroup: 'radhika-test'
+    loadTestResource: 'ado-test-mohit'
     loadTestRunName: 'sample test run'
     loadTestRunDescription: 'sample run desc'
 - publish: $(System.DefaultWorkingDirectory)/loadTest
