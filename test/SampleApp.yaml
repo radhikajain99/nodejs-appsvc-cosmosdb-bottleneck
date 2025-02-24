@@ -2,7 +2,7 @@ testId: locusttest
 testPlan: BasicLocustTest.py
 testType : Locust
 description: ''
-engineInstances: 1
+engineInstances: abc
 splitAllCSVs: False
 failureCriteria:
 - Homepage: avg(response_time_ms) > 100
