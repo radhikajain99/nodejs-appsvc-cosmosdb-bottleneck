@@ -1,8 +1,9 @@
-testId: locusttest
+testId: multiplejmx
+displayName: Multiple JMX
 testPlan: SampleApp.jmx
 testType : JMX
-description: ''
-engineInstances: abc
+description: 'Test desc'
+engineInstances: 1
 splitAllCSVs: False
 configurationFiles:
 - NikitaPodcastTest.jmx
