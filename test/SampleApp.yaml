@@ -1,9 +1,11 @@
 testId: locusttest
-testPlan: BasicLocustTest.py
-testType : Locust
+testPlan: SampleApp.jmx
+testType : JMX
 description: ''
 engineInstances: abc
 splitAllCSVs: False
+configurationFiles:
+- NikitaPodcastTest.jmx
 failureCriteria:
 - Homepage: avg(response_time_ms) > 100
 - min(latency) > 100
