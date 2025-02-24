@@ -24,7 +24,7 @@ steps:
   displayName: 'Install Node.js'
 - task: b61b360c-31ac-4389-922b-303ea8befde7@1
   inputs:
-    azureSubscription: ''
+    azureSubscription: 'wrong-spn'
     loadTestConfigFile: 'test/SampleApp.yaml'
     resourceGroup: 'radhika-test'
     loadTestResource: 'ado-test-mohit'
