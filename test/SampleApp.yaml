@@ -5,17 +5,8 @@ testType : JMX
 description: ''
 engineInstances: 4
 splitAllCSVs: False
-regionalLoadTestConfig:
-- region: eastus
-  engineInstances: 1
-- region: northeurope
-  engineInstances: 2
-- region: swedencentral
-  engineInstances: 1
 failureCriteria:
 - Test: avg(response_time_ms) > 100
 - min(latency) > 100
 - Test: percentage(error) > 10
-autoStop:
-  errorPercentage: 100
-  timeWindow: 50
+autoStop: disable
