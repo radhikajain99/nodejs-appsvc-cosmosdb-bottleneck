@@ -1,7 +1,7 @@
 testId: samplerpf
 displayName: sampler pf test
 testPlan: BasicLocustTest.py
-testType : JMX
+testType : Wrong
 description: ''
 engineInstances: 1
 splitAllCSVs: False
