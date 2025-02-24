@@ -3,7 +3,7 @@ displayName: sampler pf test
 testPlan: SampleApp.jmx
 testType : JMX
 description: ''
-engineInstances: 4
+engineInstances: 1
 splitAllCSVs: False
 failureCriteria:
 - Homepage: avg(response_time_ms) > 100
