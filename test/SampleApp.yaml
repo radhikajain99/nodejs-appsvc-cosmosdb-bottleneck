@@ -9,3 +9,4 @@ failureCriteria:
 - Homepage: avg(response_time_ms) > 100
 - min(latency) > 100
 - Homepage: percentage(error) > 10
+wrongProp: abc
