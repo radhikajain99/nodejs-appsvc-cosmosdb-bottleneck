@@ -6,7 +6,7 @@ description: ''
 engineInstances: 4
 splitAllCSVs: False
 failureCriteria:
-- Test: avg(response_time_ms) > 100
+- Homepage: avg(response_time_ms) > 100
 - min(latency) > 100
-- Test: percentage(error) > 10
+- Homepage: percentage(error) > 10
 autoStop: disable
