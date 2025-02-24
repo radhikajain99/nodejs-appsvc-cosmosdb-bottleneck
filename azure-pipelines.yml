@@ -23,26 +23,26 @@ steps:
   inputs:
     versionSpec: '16'
   displayName: 'Install Node.js'
-# - task: b61b360c-31ac-4389-922b-303ea8befde7@1
-#   inputs:
-#     azureSubscription: 'mohit-ado-test-arm'
-#     loadTestConfigFile: 'test/SampleApp.yaml'
-#     resourceGroup: 'radhika-test'
-#     loadTestResource: 'ado-test-mohit'
-#     loadTestRunName: 'sample test run'
-#     loadTestRunDescription: 'sample run desc'
-# - publish: $(System.DefaultWorkingDirectory)/loadTest
-#   artifact: results
-    
-- task: AzurePowerShell@5
+- task: b61b360c-31ac-4389-922b-303ea8befde7@1
   inputs:
     azureSubscription: 'mohit-ado-test-arm'
-    ScriptType: 'InlineScript'
-    Inline: |
-      Write-host "Sample script"
-      Write-host "Sample script"
-      Write-host "Sample script"
-      Write-host "INPUT_CONNECTEDSERVICENAMEARM env var in Run-E2E-Tests: $env:INPUT_CONNECTEDSERVICENAMEARM"
-      gci env:* | sort-object name
-    FailOnStandardError: true
-    azurePowerShellVersion: 'LatestVersion'
+    loadTestConfigFile: 'test/SampleApp.yaml'
+    resourceGroup: 'radhika-test'
+    loadTestResource: 'ado-test-mohit'
+    loadTestRunName: 'sample test run'
+    loadTestRunDescription: 'sample run desc'
+- publish: $(System.DefaultWorkingDirectory)/loadTest
+  artifact: results
+    
+# - task: AzurePowerShell@5
+#   inputs:
+#     azureSubscription: 'mohit-ado-test-arm'
+#     ScriptType: 'InlineScript'
+#     Inline: |
+#       Write-host "Sample script"
+#       Write-host "Sample script"
+#       Write-host "Sample script"
+#       Write-host "INPUT_CONNECTEDSERVICENAMEARM env var in Run-E2E-Tests: $env:INPUT_CONNECTEDSERVICENAMEARM"
+#       gci env:* | sort-object name
+#     FailOnStandardError: true
+#     azurePowerShellVersion: 'LatestVersion'
