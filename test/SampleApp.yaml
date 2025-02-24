@@ -1,7 +1,6 @@
-testId: samplerpf
-displayName: sampler pf test
+testId: locusttest
 testPlan: BasicLocustTest.py
-testType : Wrong
+testType : Locust
 description: ''
 engineInstances: 1
 splitAllCSVs: False
