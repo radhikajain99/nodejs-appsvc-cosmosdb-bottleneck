@@ -1,5 +1,5 @@
-testId: mohit-1234-1234567
-displayName: sampletest-url-test
+testId: autostop
+displayName: autostop test
 testPlan: SampleApp.jmx
 testType : JMX
 description: ''
