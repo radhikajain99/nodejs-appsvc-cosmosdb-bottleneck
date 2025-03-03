@@ -26,8 +26,8 @@ steps:
   inputs:
     azureSubscription: 'radhika-vs-sub-cert'
     loadTestConfigFile: 'test/SampleApp.yaml'
-    resourceGroup: 'radhika-test'
-    loadTestResource: 'ado-test-mohit'
+    resourceGroup: 'test'
+    loadTestResource: 'radhika-test-eus2'
     loadTestRunName: 'sample test run'
     loadTestRunDescription: 'sample run desc'
 - publish: $(System.DefaultWorkingDirectory)/loadTest
