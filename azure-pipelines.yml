@@ -22,7 +22,7 @@ steps:
   inputs:
     versionSpec: '16'
   displayName: 'Install Node.js'
-- task: b61b360c-31ac-4389-922b-303ea8befde7@1
+- task: AzureLoadTest@1
   inputs:
     azureSubscription: 'radhika-vs-sub-cert'
     loadTestConfigFile: 'test/SampleApp.yaml'
@@ -30,6 +30,17 @@ steps:
     loadTestResource: 'radhika-test-eus2'
     loadTestRunName: 'sample test run'
     loadTestRunDescription: 'sample run desc'
+    overrideParameters: |
+      {
+        "testId": "testId",
+        "displayName": "displayName",
+        "description": "description",
+        "engineInstances": 1,
+        "autoStop": {
+          "errorPercentage": 90,
+          "timeWindow": 10
+        }
+      }
 - publish: $(System.DefaultWorkingDirectory)/loadTest
   artifact: results
     
