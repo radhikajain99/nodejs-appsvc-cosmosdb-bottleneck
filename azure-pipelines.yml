@@ -25,8 +25,8 @@ steps:
   inputs:
     azureSubscription: 'mohit-123'
     loadTestConfigFile: 'test/SampleApp.yaml'
-    resourceGroup: 'test'
-    loadTestResource: 'radhika-test-eus2'
+    resourceGroup: 'radhika-test'
+    loadTestResource: 'rbac-test'
     loadTestRunName: 'sample test run'
     loadTestRunDescription: 'sample run desc'
     overrideParameters: |
