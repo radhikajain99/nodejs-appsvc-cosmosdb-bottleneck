@@ -40,8 +40,8 @@ steps:
           "timeWindow": 10
         }
       }
+    waitForCompletion: false
 - publish: $(System.DefaultWorkingDirectory)/loadTest
-  artifact: results
     
 # - task: AzurePowerShell@5
 #   inputs:
