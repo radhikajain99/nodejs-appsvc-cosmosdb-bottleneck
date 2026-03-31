@@ -40,7 +40,7 @@ steps:
           "timeWindow": 10
         }
       }
-    waitForCompletion: true
+    waitForCompletion: false
 - publish: $(System.DefaultWorkingDirectory)/loadTest
     
 # - task: AzurePowerShell@5
