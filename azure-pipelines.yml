@@ -10,7 +10,6 @@ pool:
 
 variables:
   webAppName: 'test'
-  serviceConnection: 'cnt'
   azureSubscriptionId: '7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a'
   loadTestResource: 'radhikatest-az'
   loadTestResourceGroup: 'radhika-test'
@@ -24,7 +23,7 @@ steps:
   displayName: 'Install Node.js'
 - task: AzureLoadTest@1
   inputs:
-    azureSubscription: 'radhika-vs-sub-cert'
+    azureSubscription: 'mohit-123'
     loadTestConfigFile: 'test/SampleApp.yaml'
     resourceGroup: 'test'
     loadTestResource: 'radhika-test-eus2'
