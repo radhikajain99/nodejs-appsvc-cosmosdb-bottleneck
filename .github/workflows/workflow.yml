@@ -108,9 +108,4 @@ jobs:
           loadTestConfigFile: 'test/config.yml'
           loadTestResource: ${{ secrets.LOAD_TEST_RESOURCE }}
           resourceGroup: ${{ secrets.LOAD_TEST_RESOURCE_GROUP }}
-          waitForTestRunCompletion: false
-      
-      - uses: actions/upload-artifact@v2
-        with:
-          name: loadTestResults
-          path: ${{ github.workspace }}/loadTest
+          waitForTestRunCompletion: fals
