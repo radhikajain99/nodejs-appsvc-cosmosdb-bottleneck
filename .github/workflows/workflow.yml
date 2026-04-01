@@ -100,13 +100,7 @@ jobs:
           loadTestConfigFile: 'test/config.yml'
           loadTestResource: ${{ env.LOAD_TEST_RESOURCE }}
           resourceGroup: ${{ env.LOAD_TEST_RESOURCE_GROUP }}
-          env: |
-            [
-              {
-              "name": "webapp",
-              "value": "${{ env.AZURE_WEBAPP_NAME }}.azurewebsites.net"
-              }
-            ]          
+          waitForTestRunCompletion: false
       
       - uses: actions/upload-artifact@v2
         with:
