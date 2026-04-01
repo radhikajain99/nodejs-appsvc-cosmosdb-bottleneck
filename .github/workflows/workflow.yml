@@ -1,7 +1,13 @@
 # This is a basic workflow to help you get started with Actions
 
 name: Sample App deploy
-
+on:
+  push:
+    branches:
+      - main
+      - radhika
+      - mohit
+      
 # Controls when the workflow will run
 
 env:
@@ -62,11 +68,13 @@ jobs:
       - name: Checkout GitHub Actions 
         uses: actions/checkout@v2
           
-      - name: Login to Azure
+      - name: Azure authentication
         uses: azure/login@v1
         continue-on-error: false
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
 #       - name: Create Resource Group
 #         uses: azure/powershell@v1
@@ -98,8 +106,8 @@ jobs:
         uses: Himanshu49/load-testing@testing-renaming-models
         with:
           loadTestConfigFile: 'test/config.yml'
-          loadTestResource: ${{ env.LOAD_TEST_RESOURCE }}
-          resourceGroup: ${{ env.LOAD_TEST_RESOURCE_GROUP }}
+          loadTestResource: ${{ secrets.LOAD_TEST_RESOURCE }}
+          resourceGroup: ${{ secrets.LOAD_TEST_RESOURCE_GROUP }}
           waitForTestRunCompletion: false
       
       - uses: actions/upload-artifact@v2
