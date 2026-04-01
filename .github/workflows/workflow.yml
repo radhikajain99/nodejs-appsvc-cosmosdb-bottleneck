@@ -7,7 +7,9 @@ on:
       - main
       - radhika
       - mohit
-      
+permissions:
+  id-token: write
+  contents: read
 # Controls when the workflow will run
 
 env:
