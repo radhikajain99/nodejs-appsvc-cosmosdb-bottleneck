@@ -7,7 +7,6 @@ on:
       - main
       - radhika
       - mohit
-      
 permissions:
   id-token: write
   contents: read
